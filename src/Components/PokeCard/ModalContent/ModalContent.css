@@ -1,0 +1,4 @@
+.ModalBox{
+    position: fixed;
+    z-index: 10;
+}

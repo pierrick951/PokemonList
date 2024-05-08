@@ -1,0 +1,22 @@
+.PokeLi{
+    list-style: none;
+    cursor: pointer;
+    position:relative;
+    background-color: rgb(236, 213, 213);
+    border-radius: 10px;
+    & img {
+   
+        width: 50px;
+        height: auto;
+    }
+}
+.PokeLi:hover {
+    transform: scale(1.084);
+}
+
+.headingpoke{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  
+    padding: 5px;
+}

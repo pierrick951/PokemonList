@@ -17,6 +17,9 @@
     height: 500px;
     max-width: 500px;
     & h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: rgb(167, 98, 98);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -28,3 +31,38 @@
     }
 }
 
+
+
+.boxType{
+    display: flex;
+    background-color: beige;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh;
+    overflow: hidden;
+}
+
+
+.infoType {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+
+ & img {
+
+    width: 40px;
+    
+    
+ }
+ & span {
+    display: flex;
+    align-items: center;
+    font-family: Jaro;
+    font-size: 20px;
+    color: #1c1c1ce5;
+    padding-block:15px ;
+ }
+
+}

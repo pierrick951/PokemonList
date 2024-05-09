@@ -8,13 +8,20 @@ export default function ModalContent({poke, closeModal}) {
       onClick={e=> e.stopPropagation}
       className="modalContent">
      
-        <h1>{poke.name}</h1>
+        <h1 className='headingModal'>{poke.name}
         <img src={poke.sprite} alt="" />
-        <p>Type :
-          <span>{poke.apiTypes[0].name}</span>
-          <img src={poke.apiTypes[0].image} alt="" />
+        </h1>
         
-        </p>
+        <div className="boxType">
+          <p className='infoType'>
+            {poke.apiTypes.map(type => (
+              <span key={type.name}>
+                <img src={type.image} alt={type.name}/>
+                {type.name}
+              </span>
+            ))}
+          </p>
+        </div>
       </div>
     </div>
   )

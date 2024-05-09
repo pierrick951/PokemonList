@@ -22,6 +22,28 @@ export default function ModalContent({poke, closeModal}) {
             ))}
           </p>
         </div>
+        <p className='Stats'>Stats : </p>
+        <div className="boxStats">
+          <div className="boxStatsLeft">
+            <p>HP : <span>{poke.stats.HP}</span>
+            </p>
+            <p>Attack : <span>{poke.stats.attack}</span>
+            </p>
+            <p>Defense : <span>{poke.stats.defense}</span>
+            </p>
+          </div>
+          <div className="boxStatsRigth">
+            <p>Attack Spe :
+              <span> {poke.stats.special_attack}</span>
+            </p>
+            <p>Defense Spe :
+              <span> {poke.stats.special_defense}</span>
+            </p>
+            <p>Speed :
+              <span> {poke.stats.speed}</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
